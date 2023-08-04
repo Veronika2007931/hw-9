@@ -1,11 +1,32 @@
-
- const prompt = setTimeout( function getMessege(){
-     prompt('Hello!')
-   if(prompt >= 5){
-        clearInterval(prompt)
-
+// #1
+ let time = 0;
+  timerId = setInterval(() => {
+     const alertEl = alert('hello')
+     const times = time + 1
+     console.log(times)
+    }, 1000);
+ 
+  if( timerId >= 5){
+    clearInterval(timerId)
     }
-}, 3000);
+
+// #5
+
+const input = document.querySelector('.inputEl')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
