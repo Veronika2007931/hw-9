@@ -1,16 +1,17 @@
 // #1
-//  let time = 0;
-//  function getTimer(){
-//   const  timerId = setInterval(() => {
-//     alert('hello')
-//     //  const times = time + 1
-//     //  console.log(times)
-//     }, 4000);
+// 
+ 
  
    
-//   if( timerId >= 5){
-//     clearInterval(timerId)
-//     }
+let time = 0;
+
+const timerId = setInterval(()=>{
+  time += 1
+  if( time === 6){
+    clearInterval(timerId)
+    }else{
+      alert('hello')
+}}, 3000)
 //  }
 
 // Як зробити так щоб після 5 повторів воно зупитялось
@@ -32,27 +33,27 @@
 
 // Не бачить input.value
 
-// №2
+// // №2
 
-const circle = document.querySelector('.box')
+// const circle = document.querySelector('.box')
 
-function getNumber(numbers){
+// function getNumber(numbers){
 
-  setInterval(()=>{
-    const number =  Math.floor(Math.random() * numbers);
-    circle.style.backgroundColor = "green"
-    circle.style.height = `${number} px`
-    circle.style.width =  `${number} px`
-    console.log(number)
-    console.log( circle.style.height)
-    console.log( circle.style.width)
-}, 4000)
-}
+//   setInterval(()=>{
+//     const number =  Math.floor(Math.random() * numbers);
+//     circle.style.backgroundColor = "green"
+//     circle.style.height = `${number} px`
+//     circle.style.width =  `${number} px`
+//     console.log(number)
+//     console.log( circle.style.height)
+//     console.log( circle.style.width)
+// }, 4000)
+// }
 
 // не змінює розмір
 
 // getNumber(40)
-console.log('hello')
+// console.log('hello')
 
 
 
