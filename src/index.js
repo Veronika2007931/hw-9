@@ -1,20 +1,17 @@
 // #1
 // 
- 
- 
-   
-let time = 0;
+// let time = 0;
 
-const timerId = setInterval(()=>{
-  time += 1
-  if( time === 6){
-    clearInterval(timerId)
-    }else{
-      alert('hello')
-}}, 3000)
-//  }
+// const timerId = setInterval(()=>{
+//   time += 1
+//   if( time === 6){
+//     clearInterval(timerId)
+//     }else{
+//       alert('hello')
+// }}, 3000)
+//  
 
-// Як зробити так щоб після 5 повторів воно зупитялось
+
 
 // #4
 
@@ -55,8 +52,14 @@ const timerId = setInterval(()=>{
 // getNumber(40)
 // console.log('hello')
 
+// №3
 
-
+// const text =  document.querySelector(".alert")
+// let setTime = 0
+// const intervalId = setInterval(()=>{
+//    setTime += 1
+//     text.textContent = setTime
+// }, 1000)
 
 
 
