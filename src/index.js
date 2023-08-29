@@ -15,17 +15,20 @@
 
 // #4
 
-// const input = document.querySelector('.inputEl')
-// const button = document.querySelector('.button')
+const input = document.querySelector('.inputEl')
+const button = document.querySelector('.button')
 
-// const value = input.value
-// button.addEventListener("click", vievAlert)
+const value = input.value
 
-// function vievAlert(){
-//   const now = setInterval(() => {
+
+button.addEventListener("click", vievAlert)
+
+function vievAlert(){
+    console.log(value)
+//  setTimeout(() => {
 //     alert('hello')
 //     }, value);
-// }
+}
 
 
 // Не бачить input.value
@@ -34,36 +37,48 @@
 
 // const circle = document.querySelector('.box')
 
-// function getNumber(numbers){
+// function getNumber(){
+// setInterval(()=>{
 
-//   setInterval(()=>{
-//     const number =  Math.floor(Math.random() * numbers);
-//     circle.style.backgroundColor = "green"
-//     circle.style.height = `${number} px`
-//     circle.style.width =  `${number} px`
-//     console.log(number)
-//     console.log( circle.style.height)
-//     console.log( circle.style.width)
+//     const randomColor = Math.floor(Math.random()*16777215).toString(16);
+//     circle.style.backgroundColor = "#" + randomColor;
+
 // }, 4000)
 // }
 
-// не змінює розмір
 
-// getNumber(40)
-// console.log('hello')
+// getNumber()
+
 
 // №3
 
 // const text =  document.querySelector(".alert")
+// const button = document.querySelector('.button')
+// const button2 = document.querySelector('.button2')
+// const header = document.querySelector(".header")
+// const timeText = document.querySelector(".mainText")
+
 // let setTime = 0
-// const intervalId = setInterval(()=>{
-//    setTime += 1
+// button.addEventListener("click", ()=>{
+//     setTime += 1
 //     text.textContent = setTime
-// }, 1000)
+// })
 
+// button2.addEventListener('click', ()=>{
+//     const min = 4
+//     const max = 10
+//     const number = Math.floor(Math.random() * (max - min) + min)
+    
+//     timeText.innerHTML= `Натисніть на кнопку ${number} разів `
 
-
-
+//     timerId = setTimeout(() => {
+// if(setTime === number){
+//     header.textContent='Ви вийграли!'
+//         }else{
+//             header.textContent='Ви не встигли :(' 
+//         }
+//       }, 5000);
+// })
 
 
 
