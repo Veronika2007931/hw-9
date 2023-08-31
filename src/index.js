@@ -18,20 +18,15 @@
 const input = document.querySelector('.inputEl')
 const button = document.querySelector('.button')
 
-const value = input.value
-
-
 button.addEventListener("click", vievAlert)
 
 function vievAlert(){
+    const value = input.value
     console.log(value)
-//  setTimeout(() => {
-//     alert('hello')
-//     }, value);
+ setTimeout(() => {
+    alert('hello')
+    }, value);
 }
-
-
-// Не бачить input.value
 
 // // №2
 
